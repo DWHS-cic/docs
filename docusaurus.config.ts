@@ -1,9 +1,5 @@
 export default {
-  // ...
-  url: 'https://dwhs-cic.github.io/docs', // Your website URL
-  baseUrl: '/',
-  projectName: 'docs',
-  organizationName: 'yangxinhan',
-  trailingSlash: false,
+  url: 'https://docs.netlify.app', // Url to your site with no trailing slash
+  baseUrl: '/', // Base directory of your site relative to your repo
   // ...
 };
