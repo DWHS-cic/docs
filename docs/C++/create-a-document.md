@@ -2,56 +2,12 @@
 sidebar_position: 2
 ---
 
-# Create a Document
+C++是什麼？
+===
 
-Documents are **groups of pages** connected through:
+### C/C++
+C語言是在1970年左右由Dennis Ritchie和Ken Thompson在貝爾實驗室開發出來的程式語言，它是由B語言演變而來，屬於編譯語言。C語言具有高階語言的特性，同時也有接近組合語言的速度。<br />
+C++ 也是在貝爾實驗室開發出來的，目的是打造一種具有物件導向的C語言，所以用C語言寫的程式大部份都可以在C++執行。
 
-- a **sidebar**
-- **previous/next navigation**
-- **versioning**
-
-## Create your first Doc
-
-Create a Markdown file at `docs/hello.md`:
-
-```md title="docs/hello.md"
-# Hello
-
-This is my **first Docusaurus document**!
-```
-
-A new document is now available at [http://localhost:3000/docs/hello](http://localhost:3000/docs/hello).
-
-## Configure the Sidebar
-
-Docusaurus automatically **creates a sidebar** from the `docs` folder.
-
-Add metadata to customize the sidebar label and position:
-
-```md title="docs/hello.md" {1-4}
----
-sidebar_label: 'Hi!'
-sidebar_position: 3
----
-
-# Hello
-
-This is my **first Docusaurus document**!
-```
-
-It is also possible to create your sidebar explicitly in `sidebars.js`:
-
-```js title="sidebars.js"
-export default {
-  tutorialSidebar: [
-    'intro',
-    // highlight-next-line
-    'hello',
-    {
-      type: 'category',
-      label: 'Tutorial',
-      items: ['tutorial-basics/create-a-document'],
-    },
-  ],
-};
-```
+### C++用途
+C++是個相當複雜的預言，包含C語言大部分用法，也加入了物件導向等許多現今特性，能夠處理更加貼近使用者的程式。作業系統如Windows、iOS以及瀏覽器如Chrome、Firefox等，和大家熟知的英雄聯盟、PUBG等，都是使用C++寫的。
