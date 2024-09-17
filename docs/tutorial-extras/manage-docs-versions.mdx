@@ -1,0 +1,134 @@
+---
+sidebar_position: 1
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# 高中生解題系統
+
+## a
+
+### a001
+<Tabs groupId="tutorial-extras">
+  <TabItem value="a001-cpp" label="C++">
+    ```cpp
+    #include <bits/stdc++> //bits/stdc++.h 無法使用時使用下方註解程式碼
+    //#include <iostream>
+    //#include <string>
+    using namespace std;
+
+    int main() {
+      string name;
+      cin >> name;
+      cout << name << ", world" << endl;
+      return 0;
+    }
+    ```
+  </TabItem>
+  <TabItem value="a001-py" label="Python">
+    ```py
+    name = input()
+    print(name + ", world")
+    ```
+  </TabItem>
+</Tabs>
+
+### a002
+<Tabs groupId="tutorial-extras">
+  <TabItem value="a002-cpp" label="C++">
+    ```cpp
+    #include <bits/stdc++> //bits/stdc++.h 無法使用時使用下方註解程式碼
+    //#include <iostream>
+    using namespace std;
+
+    int main() {
+      int a, b;
+      cin >> a >> b;
+      cout << a + b << endl;
+      return 0;
+    }
+    ```
+  </TabItem>
+  <TabItem value="a002-py" label="Python">
+    ```py
+    a, b = map(int, input().split())
+    print(a + b)
+    ```
+  </TabItem>
+</Tabs>
+
+### a003
+<Tabs groupId="tutorial-extras">
+  <TabItem value="a003-cpp" label="C++">
+    ```cpp
+    #include <bits/stdc++> //bits/stdc++.h 無法使用時使用下方註解程式碼
+    //#include <iostream>
+    using namespace std;
+
+    int main() {
+      int m, d;
+      cin >> m >> d;
+      s = (m * 2 + d) % 3;
+      cout << s << endl;
+      return 0;
+    }
+    ```
+  </TabItem>
+  <TabItem value="a003-py" label="Python">
+    ```py
+    m, d = map(int, input().split())
+    s = (m * 2 + d) % 3
+    print(s)
+    ```
+  </TabItem>
+</Tabs>
+
+### a004
+<Tabs groupId="tutorial-extras">
+  <TabItem value="a004-cpp" label="C++">
+    ```cpp
+    #include <bits/stdc++> //bits/stdc++.h 無法使用時使用下方註解程式碼
+    //#include <iostream>
+    using namespace std;
+
+    int main() {
+      int n;
+      int i;
+
+      while (cin >> n) {
+        if (n % 400 == 0) {
+          cout << "閏年" << endl;
+        } else if (n % 100 == 0) {
+          cout << "平年" << endl;
+        } else if (n % 4 == 0) {
+          cout << "閏年" << endl;
+        } else {
+          cout << "平年" << endl;
+        }
+      }
+        
+
+      return 0;
+    }
+    ```
+  </TabItem>
+  <TabItem value="a004-py" label="Python">
+    ```py
+    while True:
+      try:
+        n = int(input())
+
+        if n % 400 == 0:
+          print("閏年")
+        elif n % 100 == 0:
+          print("平年")
+        elif n % 4 == 0:
+          print("閏年")
+        else:
+          print("平年")
+      except EOFError:
+        break
+    ```
+  </TabItem>
+</Tabs>

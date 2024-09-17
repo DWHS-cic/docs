@@ -1,0 +1,43 @@
+---
+sidebar_position: 2
+---
+
+# ASOJ
+
+## 第一次 APCS 模擬測驗 (apcs_1)
+
+### 電車難題 (Metro)
+
+#### 題目
+https://apcs-simulation.com/contest/2/problem/p1
+
+#### 題解
+```cpp
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+    /* 輸出與初始化變數 */
+    int n, p, m, k, d;
+    cin >> n >> p >> m >> k >> d;
+    /* 初始狀態 */
+    int seats = max(n - p, 0); // 幾個空座位
+    int stand = max(p - n, 0); // 幾個人站著
+    /* 讓該下車的人下車 */
+    seats += m; // m 個坐著的人下車相當於增加 m 個空位
+    stand -= k; // k 個站著的人下車
+    /* 車內站著的人先搶座位 */
+    int tmp = seats - stand; // 站著的人都坐下後剩下多少座位 (負數代表座位不夠且有 tmp 個人站著)
+    seats = max(tmp, 0);
+    stand = max(-tmp, 0);
+    /* 放冰川進來搶座位 */
+    if (seats > 0) { // 還有座位
+        cout << "Happy :>" << endl; // 搶到了 ><
+        cout << seats - 1 << endl; // 被冰川搶走一個，所以剩下 seat - 1 個
+    } else {
+        cout << "Sad :((" << endl; // 沒搶到 qwq
+        cout << stand << endl; // 目前站著的人數
+    }
+}
+```
