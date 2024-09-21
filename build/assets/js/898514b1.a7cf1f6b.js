@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[9067],{9187:s=>{s.exports=JSON.parse('{"tags":[{"label":"\u7de8\u8b6f\u5668","permalink":"/docs/tags/\u7de8\u8b6f\u5668","count":1}]}')}}]);

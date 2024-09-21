@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[8121],{8070:t=>{t.exports=JSON.parse('{"tags":[{"label":"C++","permalink":"/blog/tags/C++","description":"C++ tag description","count":1},{"label":"Python","permalink":"/blog/tags/Python","description":"Python tag description","count":1}]}')}}]);

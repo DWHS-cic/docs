@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[1589],{9271:s=>{s.exports=JSON.parse('{"tag":{"label":"\u7de8\u8b6f\u5668","permalink":"/docs/tags/\u7de8\u8b6f\u5668","allTagsPath":"/docs/tags","count":1,"items":[{"id":"intro","title":"\u958b\u767c\u74b0\u5883","description":"Dev C++","permalink":"/docs/intro"}],"unlisted":false}}')}}]);
