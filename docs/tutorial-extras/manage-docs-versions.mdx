@@ -132,3 +132,108 @@ import TabItem from '@theme/TabItem';
     ```
   </TabItem>
 </Tabs>
+
+### a005
+<Tabs groupId="tutorial-extras">
+  <TabItem value="a006-cpp" label="C++">
+    ```cpp
+    #include <bits/stdc++> //bits/stdc++.h 無法使用時使用下方註解程式碼
+    //#include <iostream>
+    using namespace std;
+
+    void run() {
+        int arr[5];
+        for (int i = 0; i < 4; i++) {
+            cin >> arr[i];
+        }
+        if (arr[1] - arr[0] == arr[3] - arr[2]) {
+            arr[4] = arr[3] + (arr[1] - arr[0]);
+        }else if (arr[1] / arr[0] == arr[3] / arr[2]) {
+            arr[4] = arr[3] * (arr[1] / arr[0]);
+        }
+        for (int i = 0; i < 5; i++) {
+            cout << arr[i] << " ";
+        }
+        cout << "\n";
+        return;
+    }
+
+    int main() {
+        int t;
+        cin >> t;
+        for (int i = 0; i < t; i++) {
+            run();
+        }
+        
+        return 0;
+    }
+    ```
+  </TabItem>
+  <TabItem value="a005-py" label="Python">
+    ```py
+    t = int(input())
+  for i in range(t):
+      arr = list(map(int, input().split()))
+
+      if arr[1] - arr[0] == arr[2] - arr[1]:
+          ans = arr[3] + (arr[2] - arr[1])
+      elif arr[1] // arr[0] == arr[2] // arr[1]:
+          ans = arr[3] * (arr[2] // arr[1])
+      print(arr[0], arr[1], arr[2], arr[3], ans)
+    ```
+  </TabItem>
+</Tabs>
+
+### a006
+<Tabs groupId="tutorial-extras">
+  <TabItem value="a005-cpp" label="C++">
+    ```cpp
+    #include <bits/stdc++> //bits/stdc++.h 無法使用時使用下方註解程式碼
+    //#include <iostream>
+    //#include <math.h>
+    using namespace std;
+
+    int main() {
+        int a, b, c, x, d;
+        double x1, x2;
+        cin >> a >> b >> c;
+        d = (b * b) - (4 * a * c);
+        if (d > 0) {
+            x1 = (-b + sqrt(d)) / (a * 2);
+            x2 = (-b - sqrt(d)) / (a * 2);
+            if (x1 < x2) {
+                cout << "Two different roots x1=" << x2 << " , x2=" << x1 << "\n";
+            } else {
+                cout << "Two different roots x1=" << x1 << " , x2=" << x2 << "\n";
+            }
+        } else if (d == 0) {
+            x = -b / (a * 2);
+            cout << "Two same roots x=" << x << "\n";
+        } else {
+            cout << "No real root\n";
+        }
+
+        return 0;
+    }
+    ```
+  </TabItem>
+  <TabItem value="a006-py" label="Python">
+    ```py
+    import math
+    a, b, c = map(int, input().split())
+    d = (b * b) - (4 * a * c)
+    if d > 0:
+        x1 = (-b + math.sqrt(d)) / (a * 2)
+        x2 = (-b - math.sqrt(d)) / (a * 2)
+        if x1 < x2:
+            print("Two different roots x1=%d , x2=%d" % (x2, x1))
+        else:
+            print("Two different roots x1=%d , x2=%d" % (x1, x2))
+    elif d == 0:
+        x = -b / (a * 2)
+        print("Two same roots x=%d" % x)
+    else:
+        print("No real root")
+    ```
+  </TabItem>
+</Tabs>
