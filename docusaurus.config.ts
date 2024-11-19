@@ -135,4 +135,8 @@ const config: Config = {
   } satisfies Preset.ThemeConfig,
 };
 
-export default config;
+export default {
+  url: 'https://creative-crepe-e6ca32.netlify.app', // Url to your site with no trailing slash
+  baseUrl: '/', // Base directory of your site relative to your repo
+  // ...
+};
