@@ -3,8 +3,8 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'DWCIC',
-  tagline: 'Dinosaurs are cool',
+  title: 'About Us',
+  tagline: 'A high school student clubs',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -50,7 +50,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/DWHS-cic/docs',
+            'https://github.com/DWHS-cic',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -67,7 +67,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'DWSCIC',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -121,7 +121,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/DWHS-cic/docs',
+              href: 'https://github.com/DWHS-cic',
             },
           ],
         },
@@ -135,8 +135,4 @@ const config: Config = {
   } satisfies Preset.ThemeConfig,
 };
 
-export default {
-  url: 'https://creative-crepe-e6ca32.netlify.app', // Url to your site with no trailing slash
-  baseUrl: '/', // Base directory of your site relative to your repo
-  // ...
-};
+export default config;
